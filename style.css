@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/***Menu de navegación***/
+
+html{
+   height:100%;
+ }
+
+body{
+    background:#f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+   
+}
+
+
+.contenedor-nav{
+   display: flex;
+   margin-top: 15px;
+   justify-content: space-between;
+   align-items: center;
+  
+
+}
+
+.logo{
+   margin-top: 20px;
+   padding-left: 20px;
+   width: 1rem;
+   height: 50px;
+   margin-bottom: 20px;
+   
+}
+
+
+.cabecera{
+   
+    align-items: center;
+    background:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+      
+}
+
+
+.menu__lista{
+    display: flex;
+}
+
+.menu__item{
+    list-style: none;
+}
+
+.menu__link{
+    color: #808080;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu__link:hover{
+ 
+    text-decoration: underline;
+    text-decoration-color: #ffed29;
+    text-decoration-thickness: 4px;
+    
+   
+}
+
+.menu__link--activo{
+   font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    background-color: #ffed29;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+
+
+/***Banner***/
+
+.banner{
+    width: 100%;
+}
+
+
+
+
+
+/***El porqué deberían elegirnos***/
+
+.contenedor-ppal{
+   
+   background-color:rgb(210, 210, 210);
+}
+
+
+.titulo-centralizado{
+   text-align: center;
+   padding: 50px;
+   font-size: 30px;
+   color: #d32902;
+ }
+
+.contenedor-porque{
+ padding: 50px;
+ display: flex;
+ margin-top: 30px;
+ justify-content:space-around;
+}
+
+
+.items{
+  
+   font-style: italic;
+   font-size: 18px;
+ }
+
+ 
+ul.lista-items{
+  list-style: none;
+  padding: 0;
+}
+
+li.items::before { /* Añadimos contenido antes de cada elemento de la lista */
+  content:"\25ba";  ; /* Insertamos el marcador */
+  padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
+  color: #ffed29; /* Coloreamos la viñeta */
+  }
+
+iframe{
+  border-radius: 5px;
+
+}
+
+section.contenedor-dos{
+   display: flex;
+
+}
+
+div.contenedor-quienes{ 
+   margin-top: 50px; 
+   padding: 30px;
+   margin-bottom: 50px;
+
+
+}
+
+div.contenedor-quienes img.izquierda {
+   float: left;
+   margin-right: 50px;
+
+ }
+
+
+ .titulo-quienes{
+   text-align: justify;
+   padding: 15px;
+   font-size: 25px;
+   color: black;
+   font-weight: bold;
+
+ }
+
+ .parrafo-quienes{
+   font-size: 18px;
+   color: grey;
+
+ }
+
+
+ /*** Nuestras Actividades ***/
+
+.NuestrasActividades{
+   width: 100%;
+   background-color: rgb(40,41, 50);
+   
+}
+
+.contenedor-centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.head-actividades{
+   padding: 3% 25%;
+   text-align: center;
+   color: white;     
+   font-weight: bold;
+   margin: 0px;
+   background-color: rgb(40, 41, 50);
+}
+.asociate{
+   display: inline-block;
+   width: 180px;
+   height: 50px;   
+   font-size: 18px;
+   font-weight: bold;
+   color: black;
+   background: rgb(255, 257, 41);
+   border: none;
+   border-radius: 5px;
+   transition: 1s all;
+   cursor:pointer;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   
+    
+ }
+
+
+img#activCuatro,#activTres,#activDos,#activUno {
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   border: dashed;
+   border-color: rgb(255, 257, 41);   
+   padding: 10px 10px 70px 10px;
+   margin: 22.4px;
+}
+
+
+
+
+.contenedor-actividades{
+   position: relative;
+   display: inline-block;
+   padding: 30px;
+   padding-top: 20px;
+   text-align: center;
+   background-color: rgb(40, 41, 50);
+   
+   
+}
+
+.actividades{
+   position: absolute;
+   vertical-align: text-bottom;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   text-shadow: 
+   1px 1px 0 #000,
+   -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+   1px 1px 0 #000;
+   -webkit-text-stroke: 0,5px black;
+   letter-spacing: 2px;
+   
+
+  
+   
+}
+
+.descripcion-actividades{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   width: 214px;
+   background-color: grey;
+   color: white;
+   transform: translate(12%, -150%);
+   font-size: 12px;
+
+}
+
+#actividades{
+   text-transform: uppercase;
+ }
+
+
+
+
+
+
+
+ /*** Membresía ***/
+
+span{
+   color: #ffed29;
+}
+
+.seccion-membresia{
+   display: inline-flex;
+}
+
+.seccion-membresia {
+   background-color: rgb(210, 210, 210);
+   display: inline-flex;
+   width: 100%;
+   height: 500px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   
+
+}
+
+.titulo-membresia{
+
+   padding-top: 50px;
+   padding: 30px;
+   margin: 0;
+   background-color: rgb(210, 210, 210);
+   color: black;
+}
+
+
+
+.contenedor-membresia{
+   position: relative;
+   float: left;
+   padding: 60px 40px 20px;
+   text-align: center;
+   margin-top: 100px;
+   
+}
+
+.membresia{
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   text-shadow: 
+   1px 1px 0 #000,
+   -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+   1px 1px 0 #000;
+   -webkit-text-stroke: 0,5px black;
+   letter-spacing: 2px;   
+   
+
+}
+
+.boton-compra{
+   position: absolute;
+   vertical-align: text-bottom;
+   padding: 8px 20px;
+   color: black;
+   background-color: rgb(31, 225, 186);
+   top: 74%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-color: black;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.BasesyCondiciones{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   width: 340px;
+   background-color: grey;
+   color: white;
+   transform: translate(0%, -13%);
+   box-shadow: none !important;
+}
+
+.btn-BasesyCondiciones{
+   height: 40px;
+   width: 340px;
+   color: white;
+   background-color: grey;
+   border: none;
+   cursor: pointer;
+
+}
+#btn-compra{
+   background-color: rgb(180, 92, 255);
+
+}
+
+
+section.tablaunido{
+   margin-top: 0.2px;
+   
+}
+span{
+   color: #ffed29;
+
+ }
+ #membresia{
+   text-transform: uppercase;
+
+ }
+
+
+ /***Contacto ***/
+
+
+ section.tablaunido{
+   padding-top: 5px;
+   margin-bottom: 1px;
+}
+
+ .tablaunido{
+   background-image: url(images/Contacto.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+    
+}
+
+h2.titulo-prueba,h3.titulo-prueba {
+   color: white;
+
+}
+
+ .titulo-prueba{
+   margin: 0;
+   padding: 20px;
+ }
+
+ .formulario, .contenedor-general{
+  
+    width: 940px;
+    margin: 0 auto;
+ }
+
+ form,.contenedor-ubicacion, .contenedor-redes{
+    margin: 0;
+ }
+
+
+ .input-form{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+ }
+
+ .enviar{
+    display: block;
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background:  rgb(255, 251, 40);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+   
+    
+ }
+
+ .enviar:hover{
+    background:rgb(255, 237, 41);
+    transform: scale(1.2);
+ }
+
+ #camposObligatorios{
+   color: #d32902;
+   font-weight: bold;
+  }
+
+ .contenedor-general{ 
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+ 
+h4, .direccion, .grupo{
+   color: white;
+}
+
+
+ .contenedor-redes{
+    padding-right: 100px;
+    margin-right: 300px;
+ }
+
+ .redes-container{
+    padding: 4px;
+    margin: 4px;
+ }
+
+ .redes-container svg{
+    color: orangered;
+ }
+
+ .mapa{
+    width: 100%;
+   
+ }
+
+/***Login-Registro ***/
+
+
+
+/*** modifique esta parte para agregar  la imagen de fondo ***/
+
+.tablalogin{
+   background-image: url(images/woman-back-workout-fitness.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+    
+}
+
+
+/*** Solo agregue esta parte para las preguntas ***/
+
+.tablaregistro{
+   background-image: url(images/bg.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+    
+}
+
+
+
+#help{
+   color: #f9f9f9;
+   font-size: large;
+ }
+
+ #reg{
+   color: #f9f9f9;
+   font-size: large;
+ }
+
+
+/***Footer ***/
+
+
+ footer{
+   margin-top: auto;
+   padding-top: 15px;
+   background: #111;
+}
+.footer-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+.footer-content h3{
+   font-size: 1.8rem;
+   font-weight: 400;
+   text-transform: capitalize;
+   line-height: 3rem;
+}
+.footer-content p{
+   max-width: 500px;
+   margin: 10px auto;
+   line-height: 28px;
+   font-size: 14px;
+}
+.socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3rem 0;
+}
+.socials li{
+   margin: 0 10px;
+}
+.socials a{
+   text-decoration: none;
+   color: #fff;
+}
+.socials a i{
+   font-size: 1.1rem;
+   transition: color .4s ease;
+
+}
+.socials a:hover i{
+   color: aqua;
+}
+
+.footer-bottom{
+   background: #000;
+   width: 100vw;
+   padding: 20px 0;
+   text-align: center;
+}
+.footer-bottom p{
+   font-size: 14px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+}
+.footer-bottom span{
+   text-transform: uppercase;
+   opacity: .4;
+   font-weight: 200;
+}
+
